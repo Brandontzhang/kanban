@@ -1,0 +1,54 @@
+.addSectionButton {
+  margin: 110px;
+  font-weight: bold;
+  font-size: 40px;
+  color: #FFF,
+}
+
+.addSectionButton:hover {
+  color : darken($color: #FFF, $amount: 10)
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+.gridContainer {
+  display: grid;
+  gap: 1.5rem; // specifically for gaps between grid items
+  height: 100vh;
+  width: auto;
+  grid-template-rows: 60px 1fr;
+}
+
+.taskColumn {
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-color: #FFF transparent;
+  scrollbar-width: 12px;
+  
+  grid-row-start: 2;
+  grid-row-end: 3
+}
+
+.taskColumn::-webkit-scrollbar {
+  display: block;
+  height: auto;
+  width: 12px;
+  overflow: auto;
+}
+
+.taskColumn::-webkit-scrollbar-thumb {
+  background-color: #FFF;
+  border-radius: 10px;
+}
+
+.taskColumn::-webkit-scrollbar-track {
+  background: #FFF;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  background-clip: padding-box;
+}

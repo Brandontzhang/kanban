@@ -1,0 +1,45 @@
+$cardColor : #68C3D4;
+
+.add {
+  position: relative;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.add:hover {
+  color: darken(#FFF, 10)
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 220px;
+
+  padding: 10px;
+  background-color: $cardColor;
+  width: 220px;
+  height: auto;
+  box-shadow: 0px 4px 4px #00000040;
+  border-radius: 10px;
+  color: #ffffff;
+
+  margin: 20px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+  padding: auto;
+  margin: auto, 0;
+  height: auto;
+  width: 180px;
+  background-color: transparent;
+  border: none;
+  color: #FFF;
+}
+
+.title:focus {
+  outline: none;
+  text-decoration: underline;
+}

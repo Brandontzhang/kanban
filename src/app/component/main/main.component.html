@@ -1,0 +1,14 @@
+<div class="flexContainer">
+  <div cdkDropListGroup class="gridContainer" [ngStyle]="{'grid-template-columns' : 'repeat(' + columns + ', 300px)'}">
+    <div *ngFor="let section of sections">
+      <Header [section]="section" (createNewCard)="addCard($event)"></Header>
+      <div cdkDropList [cdkDropListData]="section.cards" (cdkDropListDropped)="drop($event, section.id)" class="taskColumn">
+        <Card *ngFor="let card of section.cards" [card]="card" [sectionId]="section.id" cdkDrag></Card>  
+      </div>
+    </div>
+  </div>
+  
+  <div>
+    <mat-icon class="addSectionButton" (click)="addSection()">add</mat-icon>
+  </div>
+</div>

@@ -1,0 +1,58 @@
+To Do:
+- focus on the section header when a new section is created
+  - section has new variable new
+  - when new section is added, new = true, and on input *ngIf=new, autofocus
+  - after enter, the new section is added, with new set to false
+- make the cards draggable to different sections
+- remove a card
+- remove a column
+
+Bonus
+- make the checkbox prettier
+
+
+Completed:
+- Plus button on right side
+  - make the plus button on the right side add a new section
+- make the section header name editable
+- plus button on the section header adds a new card
+- make the card editable
+- add in sample data in main
+- add a database to the back (using sql)
+	- unique ids for sections, cards, and subtasks
+	- changing/editing values based on id
+- make the data on the screen add to database (so more backend shenanigans tomorrow!)
+
+
+this.sections = [
+      { title:'section1test', cards:[
+        {title:'card1', description:'card1 description', tasks:[
+          {desc: 'section1 card1 task1', completed: false},
+          {desc: 'section1 card1 task2', completed: false},
+          {desc: 'section1 card1 task3', completed: false},
+          {desc: 'section1 card1 task4', completed: false},
+        ]},
+        {title:'card2', description:'card2 description', tasks:[
+          {desc: 'section1 card2 task1', completed: false},
+          {desc: 'section1 card2 task2', completed: false},
+          {desc: 'section1 card2 task3', completed: false},
+          {desc: 'section1 card2 task4', completed: false},
+        ]}]
+      },
+      { title:'section2', cards:[
+        {title:'card1', description:'card1 description', tasks:[
+          {desc: 'section2 card1 task1', completed: false},
+          {desc: 'section2 card1 task2', completed: false},
+          {desc: 'section2 card1 task3', completed: false},
+          {desc: 'section2 card1 task4', completed: false},
+          {desc: 'section2 card1 task5', completed: false},
+          {desc: 'section2 card1 task6', completed: false},
+        ]},
+        {title:'card2', description:'card2 description', tasks:[
+          {desc: 'section2 card2 task1 yar asd as dasd asd asd ao', completed: false},
+          {desc: 'section2 card2 task2', completed: false},
+          {desc: 'section2 card2 task3', completed: false},
+          {desc: 'section2 card2 task4', completed: false},
+        ]}]
+      }
+    ]

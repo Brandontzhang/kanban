@@ -1,0 +1,94 @@
+$cardColor : #68C3D4;
+
+.addSubTask {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #FFF;
+  margin-left: 20px;
+  width: 180px;
+  border-bottom: 1px solid #FFF;
+}
+
+.addSubTask::placeholder {
+  color:darken(#FFF, 10);
+}
+
+.card {
+  padding: 10px;
+  background-color: $cardColor;
+  width: 220px;
+  height: auto;
+  box-shadow: 0px 4px 4px #00000040;
+  border-radius: 10px;
+  color: #ffffff;
+  margin: 20px;
+}
+
+.checkbox {
+  float: left;
+  height: 14px;
+  border: 2px solid #bcbcbc;
+  margin: 0;
+  margin-right: 5px;
+}
+
+.completed {
+  text-decoration: line-through;
+  width: auto
+}
+
+.description {
+  font-style: italic;
+  font-size: 12;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  height: 1px;
+  background-color: #FFF;
+  border: none;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+}
+
+.listItem {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+  width: auto;
+  white-space: nowrap;
+}
+
+.title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 5px 0;
+
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #FFF;
+}
+
+.todoList {
+  margin: 0;
+  padding: 0 5px;
+  list-style-type: none;
+}
+
+ul {
+  margin: 0;
+}
+

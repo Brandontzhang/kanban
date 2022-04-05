@@ -1,0 +1,4 @@
+<div class="header">
+    <input #sectionTitle class="title" [value]="section.title" (keyup.enter)="onTitleEntry($event)" focus>
+    <mat-icon class="add" (click)="createCard()">add</mat-icon>
+</div>

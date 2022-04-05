@@ -1,0 +1,22 @@
+<div class="card">
+  <div class="header">
+    <input [(ngModel)]="card.title" class="title" (change)="updateCard($event.target, null)">
+    <input [(ngModel)]="card.description" class="description input" (change)="updateCard(null, $event.target)">
+  </div>
+  <hr>
+  <ul class="todoList">
+    <li class=`listItem` *ngFor="let task of card.tasks">
+      <div class="item">
+        <input type="checkbox" [ngClass]="'checkbox'" [(ngModel)]="task.completed" (click)="completeSubTask(task)"/>
+        <span [ngClass]="task.completed ? 'completed' : ''">{{ task.description }}</span>
+      </div>
+    </li>
+  </ul>
+  <input
+    #subTaskInput
+    class="addSubTask"
+    placeholder="add new subtask"
+    [(ngModel)]="newSubTaskName"
+    (keydown.enter)="addSubTask()"
+  >
+</div>
